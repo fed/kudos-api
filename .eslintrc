@@ -1,0 +1,65 @@
+{
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "impliedStrict": true,
+      "classes": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "mocha": true,
+    "node": true,
+    "es6": true
+  },
+  "globals": {
+    "after": true,
+    "afterEach": true,
+    "before": true,
+    "beforeEach": true,
+    "describe": true,
+    "it": true,
+    "sinon": true,
+    "require": true
+  },
+  "rules": {
+    "brace-style": ["warn", "1tbs", { "allowSingleLine": true }],
+    "comma-dangle": ["warn", "never"],
+    "comma-style": ["warn", "last"],
+    "consistent-this": ["warn", "self"],
+    "curly": ["warn", "all"],
+    "eqeqeq": ["warn", "smart"],
+    "indent": ["warn", 4, { "SwitchCase": 1 }],
+    "key-spacing": "warn",
+    "keyword-spacing": "warn",
+    "lines-around-comment": ["warn", { "afterBlockComment": false, "afterLineComment": false }],
+    "max-depth": ["warn", 3],
+    "max-nested-callbacks": ["warn", 4],
+    "new-cap": ["warn", { "capIsNewExceptions": ["Router"] }],
+    "newline-after-var": ["warn", "always"],
+    "no-bitwise": "warn",
+    "no-caller": "warn",
+    "no-console": "off",
+    "no-dupe-keys": "warn",
+    "no-empty": "warn",
+    "no-mixed-spaces-and-tabs": "warn",
+    "no-multi-spaces": "warn",
+    "no-multiple-empty-lines": "warn",
+    "no-new": "warn",
+    "no-trailing-spaces": "warn",
+    "no-undef": "warn",
+    "no-unused-vars": "warn",
+    "no-use-before-define": ["warn", "nofunc"],
+    "no-var": "warn",
+    "one-var": ["warn", { "initialized": "never" }],
+    "quotes": ["warn", "single", { "allowTemplateLiterals": true }],
+    "semi": ["warn", "always"],
+    "semi-spacing": ["warn", { "before": false, "after": true }],
+    "space-before-blocks": ["warn", "always"],
+    "space-infix-ops": "warn",
+    "strict": ["warn", "global"],
+    "yoda": ["warn", "never"]
+  }
+}
